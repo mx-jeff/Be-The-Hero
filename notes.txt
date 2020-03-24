@@ -1,0 +1,19 @@
+Rotas / Recursos
+
+Metodos HTTP:
+
+GET: 		buscar uma informação
+POST: 		Criar uma informação
+PUT: 		Alterar uma informação
+DELETE: 	Deletar uma informação
+
+Tipos de parametros:
+
+Query params:	Parâmetros nomeados enviados na rota "?"(Filtros, paginação)
+	Ex: ?where=brazil&name=algo
+
+Route params:	Parâmetros utilizados para identificar recursos, 
+	Ex: /<nome>
+
+Request body:	Corpo da requisição, usado para criar ou alterar recursos
+

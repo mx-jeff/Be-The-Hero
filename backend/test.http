@@ -1,0 +1,13 @@
+@base = http://localhost:3333 
+
+#GET http://localhost:3333?name=jeferson&idade=22
+
+#GET {{base}}/1
+
+POST {{base}}
+Content-Type: application/json
+
+{
+    "name": "Jeferson Morais",
+    "idade": 22
+}
