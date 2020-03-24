@@ -1,16 +1,15 @@
 const express = require('express')
 
+const OngController = require('./controllers/OngController')
+const incidentController = require('./controllers/IncidentController')
+
 const routes = express.Router()
 
-routes.post('/', (request, response) => {
-    const params = request.body
+routes.get('/ongs', OngController.index)
+routes.post('/ongs', OngController.create)
 
-    console.log(params)
-
-    return response.json({
-        status:"Funciona",
-        nome:"Jeferson"
-    })
-})
+routes.get('/incidents', incidentController.index)
+routes.post('/incidents', incidentController.create)
+routes.delete('/incidents/:id', incidentController.delete)
 
 module.exports = routes
