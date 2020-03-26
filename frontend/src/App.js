@@ -1,7 +1,15 @@
 import React from 'react';
 
+import './globals.css'
+
+import Routes from './routes'
+
 function App() {
-  return <h1>Hellow world</h1>;
+  return (
+    <>
+      <Routes />
+    </>
+  );
 }
 
 export default App;

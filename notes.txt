@@ -17,3 +17,15 @@ Route params:	Parâmetros utilizados para identificar recursos,
 
 Request body:	Corpo da requisição, usado para criar ou alterar recursos
 
+React
+
+props.childreen = passa propriedades autoaticamente entro de com componente
+ex: <header>Teste</header> : {props.childreen}
+React habilitate javascript
+//Emmet for JSX
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    },
