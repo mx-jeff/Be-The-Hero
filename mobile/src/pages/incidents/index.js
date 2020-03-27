@@ -41,9 +41,7 @@ export default function Incidents() {
   useEffect(() => {    
     loadIncidents()
   },[])  
-
-  console.log(incidents)
-
+  
   const { container, header, headerText, headerTextBold, title, description } = styles
   const { incidentList, incidentBox, incidentProperty, incidentValue, detailsButton, detailsButtonText } = styles
 
