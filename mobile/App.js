@@ -1,19 +1,16 @@
+import 'intl'
+import 'intl/locale-data/jsonp/pt-BR'
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { YellowBox } from 'react-native'
+
+import Routes from './src/routes'
 
 export default function App() {
+
+  YellowBox.ignoreWarnings(['Warning: Encountered two children'])
+
   return (
-    <View style={styles.container}>
-      <Text>Hellow world</Text>
-    </View>
+    <Routes />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
