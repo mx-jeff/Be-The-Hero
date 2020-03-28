@@ -29,3 +29,8 @@ React habilitate javascript
     "emmet.includeLanguages": {
         "javascript": "javascriptreact",
     },
+
+Next:
+	- Styled Components
+	- Js patterns
+	- JWT
