@@ -1,0 +1,6 @@
+@base = http://localhost:3333 
+@token = 8a987a4
+
+GET {{base}}/profile
+Content-Type: application/json
+Authorization: {{token}}

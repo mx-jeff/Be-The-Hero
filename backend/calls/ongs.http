@@ -1,0 +1,18 @@
+@base = http://localhost:3333 
+
+# List
+GET {{base}}/ongs
+
+###
+
+# Insert
+POST {{base}}/ongs
+Content-Type: application/json
+
+{
+    "name": "PETLOVER",
+    "email": "petlov@gmail.com",
+    "whatsapp": "11940028922",
+    "city":"diadema",
+    "uf":"SP"
+}

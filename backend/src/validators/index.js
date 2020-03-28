@@ -1,5 +1,11 @@
 const { celebrate, Segments, Joi } = require('celebrate')
 
+const Authorize = celebrate({
+    [Segments.BODY]: Joi.object().keys({
+        id: Joi.string().required()
+    })
+})
+
 const OngCreate = celebrate({ 
     [Segments.BODY] : Joi.object().keys({
         name: Joi.string().required(),
@@ -28,4 +34,15 @@ const incidentDelete = celebrate({
     })
 })
 
-module.exports = { OngCreate, profileList, incidentList, incidentDelete }
+const createIncident = celebrate({
+    [Segments.HEADERS]: Joi.object({
+        authorization: Joi.string().required()
+    }).unknown(),
+    [Segments.BODY]: Joi.object().keys({
+        title: Joi.string().required(),
+        description: Joi.string().required(),
+        value: Joi.number().required()
+    })
+}) 
+
+module.exports = { OngCreate, profileList, createIncident ,incidentList, incidentDelete, Authorize }

@@ -1,0 +1,9 @@
+@base = http://localhost:3333 
+@name = 6b0c1725
+
+POST {{base}}/sessions
+Content-Type: application/json
+
+{
+    "id": "{{name}}"
+}

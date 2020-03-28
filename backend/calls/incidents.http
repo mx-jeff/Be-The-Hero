@@ -1,0 +1,23 @@
+@base = http://localhost:3333 
+@token = 6b0c1725
+
+# List incidens
+GET {{base}}/incidents?page=3
+
+###
+
+# Send Incidents
+POST {{base}}/incidents
+Content-Type: application/json
+Authorization: {{token}}
+
+{
+    "title": "caso Z",
+    "description": "Lorem ipsun door",
+    "value": 140
+}
+###
+# Delete Incidents
+DELETE {{base}}/incidents/2
+Content-Type: application/json
+Authorization: {{token}}
